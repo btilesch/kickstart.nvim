@@ -24,6 +24,7 @@ require('lazy').setup({
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
+  { 'nvim-neotest/nvim-nio' },
 
   require 'plugins.gitsigns',
   -- NOTE: Plugins can also be configured to run lua code when they are loaded.
@@ -49,6 +50,12 @@ require('lazy').setup({
   require 'plugins.debug',
 
   require 'plugins.indent_line',
+
+  require 'plugins.vimtex',
+
+  require 'plugins.remote',
+
+  require 'plugins.harpoon',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

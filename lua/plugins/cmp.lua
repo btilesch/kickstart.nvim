@@ -3,6 +3,8 @@ return { -- Autocompletion
   event = 'InsertEnter',
   dependencies = {
     -- Snippet Engine & its associated nvim-cmp source
+    { 'roobert/tailwindcss-colorizer-cmp.nvim', config = true },
+
     {
       'L3MON4D3/LuaSnip',
       build = (function()
